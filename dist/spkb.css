@@ -11,15 +11,76 @@
 .reveal h5,
 .reveal h6, ul, blockquote { text-align: left;}
 
-footer {position: fixed;
-top: -120px;
+footer {position: static;
+top: 0px;
 left: 0px;
 font-size: 20px;
 color: #ccc;
-text-align: left;}
+text-align: left;
+margin-top: 2em;}
 
 li:not(:first-of-type) {
-margin-top: 0.4em; }
+margin-top: 0.35em; }
 
 li:not(:last-of-type) {
-margin-bottom: 0.4em; }
+margin-bottom: 0.35em; }
+
+.limg{
+    float:left;
+    margin-right: 2rem;
+    margin-top: 0px;
+    width:30%;}
+
+.rimg {
+    float:right;
+    margin-left: 2rem;
+    margin-top: 0px;
+    width:30%;}
+
+figcaption {font-size: 20px; color:#000; padding-top:0px;margin-top:0px;}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 28px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left {text-align: left;}
